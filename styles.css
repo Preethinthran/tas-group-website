@@ -312,7 +312,7 @@ h1,h2,h3{font-family:var(--font-display);line-height:1.12;letter-spacing:-.022em
 .mode-body p{color:var(--muted);font-size:15.5px}
 .mode-body ul{list-style:none;margin-top:22px;border-top:1px solid var(--line)}
 .mode-body li{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px;font-weight:500}
-.mode-body li::before{content:"";width:16px;height:2px;background:var(--accent);flex:none;transform:translateY(-4px)}
+.mode-body li::before{content:"";width:8px;height:8px;border:1.5px solid var(--accent);background:transparent;flex:none;transform:translateY(-1px) rotate(45deg);margin:0 4px 0 2px;transition:background .3s var(--ease),transform .3s var(--ease)}
 
 /* ---------- Quote / tracker ---------- */
 .convert{background:var(--paper)}
@@ -641,8 +641,7 @@ html:not(.js) .stat::before{width:36px}
 .mode-panel img.out{opacity:0;transform:scale(1.04)}
 .mode-body li{transition:padding-left .3s var(--ease),color .3s}
 .mode-body li:hover{padding-left:8px}
-.mode-body li::before{transition:width .3s var(--ease)}
-.mode-body li:hover::before{width:26px}
+.mode-body li:hover::before{background:var(--accent);transform:translateY(-1px) rotate(45deg) scale(1.2)}
 
 /* ---------- Industries ---------- */
 .ind-panel{transition:box-shadow .5s var(--ease),translate .5s var(--ease)}
